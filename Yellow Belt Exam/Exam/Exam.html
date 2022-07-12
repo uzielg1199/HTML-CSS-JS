@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="Exam.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-title">
+            <img src="heart-light.png" alt="heart" class="icons1">
+            <h1 id="PS">Pet Shelter</h1>
+            <ul class="nav-links">
+                <li><a href="#">Find a Pet</a></li>
+                <li><a href="#">About</a></li>
+                <li><button onclick="hide(this)" class="btn">Donate</button></li>
+            </ul>
+        </div>
+        <div class="nav-bottom">
+            <Label class="lbl">I'm looking for a...</Label>
+            <img src="paw-light.png" alt="paw" class="icons">
+            <select name="pets" id="drop-down" onchange="notification(this)">
+                <option value="any">Any Pet</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select>
+            <Label class="lbl">in or near...</Label>
+            <img src="pin-light.png" alt="pin" class="icons">
+            <input type="text" placeholder="City or Zip Code" class="zip-bar">
+            <button class="find-new">Find your new best friend</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sub">
+            <div class="box1">
+                <div class="animalpic">
+                    <img src="pepper.jpg" alt="pepper" class="animal-pics">
+                </div>
+                <div class="info">
+                    <h1>Pepper</h1>
+                        <p>Pepper is a slightly shy grey tabby, but she<br>
+                        really loves showing her human affection.</p>
+                </div>
+                <div class="petting">
+                    <Lable id="-pets">1 petting(s)</Lable>
+                    <button onclick="add()" class="pet-btn">Pet Pepper</button>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="animalpic">
+                    <img src="bruce.jpg" alt="bruce" class="animal-pics">
+                </div>
+                <div class="info">
+                    <h1>Bruce</h1>
+                        <p>Bruce is a loyal companion. He loves long<br>
+                        walks and cold weather.</p>
+                </div>
+                <div class="petting">
+                    <Lable id="br">1 petting(s)</Lable>
+                    <button onclick="plus()" class="pet-btn">Pet Bruce</button>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="animalpic">
+                    <img src="oscar.jpg" alt="oscar" class="animal-pics">
+                </div>
+                <div class="info">
+                    <h1>Oscar</h1>
+                        <p>Oscar is bright, energetic and friendly. He is<br>
+                        looking for a good home.</p>
+                </div>
+                <div class="petting">
+                    <Lable id="os">1 petting(s)</Lable>
+                    <button onclick="mas()" class="pet-btn">Pet Oscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Exam.js"></script>
+</body>
+</html>
